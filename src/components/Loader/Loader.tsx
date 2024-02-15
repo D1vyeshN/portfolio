@@ -20,14 +20,12 @@ const Loader = ({ children }: Props) => {
   const { active, progress, errors, item, loaded, total } = useProgress();
   const path = usePathname();
 
-  if (path !== "/") {
-    setStared(true);
-
-    redirect(`https://portfolio-indol-alpha-80.vercel.app${path}`);
-  }
-
   useEffect(() => {
     setTimeout(() => {
+      if (path !== "/" && progress==0) {
+        setStared(true);
+      }
+      
       if (progress === 100) {
         setStared(true);
       }
