@@ -20,30 +20,33 @@ const Loader = ({ children }: Props) => {
   const { active, progress, errors, item, loaded, total } = useProgress();
   const path = usePathname();
 
+  if (path !== "/") {
+    setStared(true);
+
+    redirect(`https://portfolio-indol-alpha-80.vercel.app${path}`);
+  }
+
   useEffect(() => {
     setTimeout(() => {
       if (progress === 100) {
         setStared(true);
       }
     }, 500);
-    // if (path !== "/") {
-    //   setStared(true);
-    //   redirect("/");
-    // }
   }, [progress, total, loaded, item]);
 
-  
   return (
     <ThemeProvider defaultTheme="dark">
-      {!stared &&<div
-        className={`h-screen flex items-center justify-center md:text-7xl  ${
-          stared ? "hidden" : ""
-        }`}
-      >
-        <div className="flex">
-        
-          </div> L<BiLoader className="animate-spin mx-0.5"/>A D I N G . .  {Math.round(progress)}%
-      </div>}
+      {!stared && (
+        <div
+          className={`h-screen flex items-center justify-center md:text-7xl  ${
+            stared ? "hidden" : ""
+          }`}
+        >
+          <div className="flex"></div> L
+          <BiLoader className="animate-spin mx-0.5" />A D I N G . .{" "}
+          {Math.round(progress)}%
+        </div>
+      )}
       {stared && (
         <motion.div>
           <Navbar />
