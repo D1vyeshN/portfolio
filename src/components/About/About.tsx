@@ -103,17 +103,12 @@ const About = (props: Props) => {
               About me
             </motion.h1>
             <div>
-              <p className="lg:text-xl text-base text-justify font-comfortaa font-bold ">
-              I'm a web developer who aims to combine the beauty of design
-                with the logical perfection of coding. Training myself every day
-                and pushing my own limits to discover new ways of creating a
-                great experience.
-              </p>
+              <p className="lg:text-xl text-base text-justify font-comfortaa font-bold ">I&apos;m a web developer who aims to combine the beauty of design with the logical perfection of coding. Training myself every day and pushing my own limits to discover new ways of creating a great experience.</p>
               <p className="lg:text-lg text-sm py-3 pt-8 text-justify font-comfortaa">
-                Beyond coding, you'll often find me exploring new places, diving
+                Beyond coding, you&apos;ll often find me exploring new places, diving
                 into a good book, or strategizing in my favorite games. I am
                 currently seeking opportunities to bring my skills and
-                enthusiasm to a tech company and I'm excited about the prospect
+                enthusiasm to a tech company and I&apos;m excited about the prospect
                 of taking on new challenges and pushing myself to grow
                 professionally.
               </p>
