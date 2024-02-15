@@ -30,6 +30,7 @@ import {
 } from "react-icons/tb";
 import { GrGraphQl } from "react-icons/gr";
 import { DiSass } from "react-icons/di";
+import Link from "next/link";
 
 type Props = {};
 
@@ -103,25 +104,35 @@ const About = (props: Props) => {
               About me
             </motion.h1>
             <div>
-              <p className="lg:text-xl text-base text-justify font-comfortaa font-bold ">I&apos;m a web developer who aims to combine the beauty of design with the logical perfection of coding. Training myself every day and pushing my own limits to discover new ways of creating a great experience.</p>
+              <p className="lg:text-xl text-base text-justify font-comfortaa font-bold ">
+                I&apos;m a web developer who aims to combine the beauty of
+                design with the logical perfection of coding. Training myself
+                every day and pushing my own limits to discover new ways of
+                creating a great experience.
+              </p>
               <p className="lg:text-lg text-sm py-3 pt-8 text-justify font-comfortaa">
-                Beyond coding, you&apos;ll often find me exploring new places, diving
-                into a good book, or strategizing in my favorite games. I am
-                currently seeking opportunities to bring my skills and
-                enthusiasm to a tech company and I&apos;m excited about the prospect
-                of taking on new challenges and pushing myself to grow
+                Beyond coding, you&apos;ll often find me exploring new places,
+                diving into a good book, or strategizing in my favorite games. I
+                am currently seeking opportunities to bring my skills and
+                enthusiasm to a tech company and I&apos;m excited about the
+                prospect of taking on new challenges and pushing myself to grow
                 professionally.
               </p>
             </div>
             <div className="flex gap-4">
-              <motion.button
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                className="px-5 py-3 font-grotrsk text-white shadow-md mb-3 md:mb-0 rounded-lg bg-purple-500 flex items-center "
+              <Link
+                href="https://drive.google.com/file/d/1dSl1Vp-wt_vFf8wuNPi2pn_UY1r4UsF4/view"
+                target="_blank"
               >
-                <IoDocumentTextOutline className="w-6 bg-inherit" />
-                Resume
-              </motion.button>
+                <motion.button
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                  className="px-5 py-3 font-grotrsk text-white shadow-md mb-3 md:mb-0 rounded-lg bg-purple-500 flex items-center "
+                >
+                  <IoDocumentTextOutline className="w-6 bg-inherit" />
+                  Resume
+                </motion.button>
+              </Link>
             </div>
           </div>
         </motion.div>

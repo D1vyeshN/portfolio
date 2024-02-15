@@ -45,25 +45,29 @@ const Hero = (props: Props) => {
           </h1>
           <div>
             <p className="text-lg lg:text-4xl uppercase font-comfortaa">
-              Front-end web developer 
+              Front-end web developer
             </p>
             <p className="text-sm lg:text-lg py-3 text-justify mt-2 font-comfortaa">
-              Over a year of experience crafting responsive and
-              dynamic websites. With technologies like React.js, Node.js,
-              MongoDB, JavaScript, Tailwind CSS, TypeScript, and Next.js, I bring ideas to
-              life in the digital realm.
+              Over a year of experience crafting responsive and dynamic
+              websites. With technologies like React.js, Node.js, MongoDB,
+              JavaScript, Tailwind CSS, TypeScript, and Next.js, I bring ideas
+              to life in the digital realm.
             </p>
-            
           </div>
           <div className="flex gap-4 font-grotrsk">
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              className="px-5 py-3 rounded-lg bg-white/20 flex items-center shadow-md"
+            <Link
+              href="https://drive.google.com/file/d/1dSl1Vp-wt_vFf8wuNPi2pn_UY1r4UsF4/view"
+              target="_blank"
             >
-              <IoDocumentTextOutline className="w-5 h-5 mr-2" />
-              Resume
-            </motion.button>
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                className="px-5 py-3 rounded-lg bg-white/20 flex items-center shadow-md"
+              >
+                <IoDocumentTextOutline className="w-5 h-5 mr-2" />
+                Resume
+              </motion.button>
+            </Link>
             <Link href={"/#contact"}>
               <motion.button
                 whileHover={{ scale: 1.1 }}
