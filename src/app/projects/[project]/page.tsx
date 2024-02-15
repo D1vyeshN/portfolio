@@ -80,8 +80,8 @@ const Page = (props: Props) => {
           <div className="md:px-5 md:mb-10">
             <div className="font-comfortaa ">
               <p className="md:text-base text-sm font-semibold">Key Features:</p>
-              {project?.feat?.map((fe) => (
-                <p className="md:text-sm text-xs py-0.5">
+              {project?.feat?.map((fe,i) => (
+                <p className="md:text-sm text-xs py-0.5" key={i}>
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{fe}
                 </p>
               ))}
@@ -89,8 +89,8 @@ const Page = (props: Props) => {
 
             <div className="flex capitalize font-comfortaa mt-5 flex-wrap items-center">
               <p className="md:text-base text-sm font-semibold">TechStack: </p>
-              {project?.tech.map((te) => (
-                <p className="md:text-sm text-xs">&nbsp;&nbsp;{te},</p>
+              {project?.tech.map((te,i) => (
+                <p className="md:text-sm text-xs" key={i}>&nbsp;&nbsp;{te},</p>
               ))}
             </div>
           </div>
