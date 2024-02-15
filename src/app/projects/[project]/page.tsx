@@ -33,15 +33,19 @@ const Page = (props: Props) => {
       >
         <h1 className="text-xl font-semibold">Take a look at this project</h1>
         <div className="w-full flex flex-col justify-center items-center text-white font-semibold gap-6">
-          <div className="w-full px-5 py-4 text-center bg-purple-600 hover:bg-purple-500 cursor-pointer rounded-lg flex items-center justify-between text-base shadow-md shadow-black/50">
-            <ImSphere className="w-5 h-5 bg-inherit" />
-            Live demo
-            <HiExternalLink className="w-5 h-5 bg-inherit" />
-          </div>
-          <div className="w-full px-5 py-4 text-center  bg-gray-900 hover:bg-gray-800 cursor-pointer ease-in-out transition-transform rounded-lg flex items-center justify-between text-base shadow-md shadow-black/50">
-            <BsGithub className="w-5 h-5 bg-inherit" /> Code
-            <HiExternalLink className="w-5 h-5 bg-inherit" />
-          </div>
+          <Link href={project?.liveDemo!} target="_blank" className="w-full">
+            <div className="w-full px-5 py-4 text-center bg-purple-600 hover:bg-purple-500 cursor-pointer rounded-lg flex items-center justify-between text-base shadow-md shadow-black/50">
+              <ImSphere className="w-5 h-5 bg-inherit" />
+              Live demo
+              <HiExternalLink className="w-5 h-5 bg-inherit" />
+            </div>
+          </Link>
+          <Link href={project?.github!} target="_blank" className="w-full">
+            <div className="w-full px-5 py-4 text-center  bg-gray-900 hover:bg-gray-800 cursor-pointer ease-in-out transition-transform rounded-lg flex items-center justify-between text-base shadow-md shadow-black/50">
+              <BsGithub className="w-5 h-5 bg-inherit" /> Code
+              <HiExternalLink className="w-5 h-5 bg-inherit" />
+            </div>
+          </Link>
         </div>
       </motion.div>
       {/* Descriptions */}
@@ -60,7 +64,7 @@ const Page = (props: Props) => {
         </div>
 
         <div className="flex flex-col gap-4 h-fit  min-h-[80vh] rounded-xl p-6 lg:p-10 overflow-hidden">
-          <div className="text-3xl lg:text-4xl  flex">
+          <div className="text-3xl lg:text-4xl text-purple-600 flex">
             {project?.tech.map((el) => (
               <p className="w-10">{stack[el]}</p>
             ))}
@@ -75,7 +79,7 @@ const Page = (props: Props) => {
           </div>
           <div className="md:px-5 md:mb-10">
             <div className="font-comfortaa ">
-              <p className="md:text-base text-sm font-semibold">Features:</p>
+              <p className="md:text-base text-sm font-semibold">Key Features:</p>
               {project?.feat?.map((fe) => (
                 <p className="md:text-sm text-xs py-0.5">
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{fe}
@@ -86,7 +90,7 @@ const Page = (props: Props) => {
             <div className="flex capitalize font-comfortaa mt-5 flex-wrap items-center">
               <p className="md:text-base text-sm font-semibold">TechStack: </p>
               {project?.tech.map((te) => (
-                <p className="md:text-sm text-xs">&nbsp;&nbsp;{te}</p>
+                <p className="md:text-sm text-xs">&nbsp;&nbsp;{te},</p>
               ))}
             </div>
           </div>

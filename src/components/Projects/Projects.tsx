@@ -24,20 +24,20 @@ import { projects as projectsData } from "../../utils/data";
 type Props = {};
 
 export const stack: any = {
-  reactjs: <TbBrandReact className="w-6 h-6" />,
-  nextjs: <TbBrandNextjs className="w-6 h-6" />,
-  css: <IoLogoCss3 className="w-6 h-6" />,
+  "react.Js": <TbBrandReact className="w-6 h-6" />,
+  "next.Js": <TbBrandNextjs className="w-6 h-6" />,
+  CSS: <IoLogoCss3 className="w-6 h-6" />,
   html: <FaHtml5 className="w-6 h-6" />,
   javascript: <IoLogoJavascript className="w-6 h-6" />,
-  tailwindcss: <TbBrandTailwind className="w-6 h-6" />,
+  tailwindCSS: <TbBrandTailwind className="w-6 h-6" />,
   redux: <TbBrandRedux className="w-6 h-6" />,
-  nodejs: <IoLogoNodejs className="w-6 h-6" />,
-  mongodb: <SiMongodb className="w-6 h-6" />,
+  "node.Js": <IoLogoNodejs className="w-6 h-6" />,
+  mongoDB: <SiMongodb className="w-6 h-6" />,
   typescript: <BiLogoTypescript className="w-6 h-6" />,
-  framermotion: <TbBrandFramerMotion className="w-6 h-6" />,
-  graphql: <TbBrandGraphql className="w-6 h-6" />,
+  "framer motion": <TbBrandFramerMotion className="w-6 h-6" />,
+  "graphQL": <TbBrandGraphql className="w-6 h-6" />,
   sass: <DiSass className="w-6 h-6" />,
-  threejs: <SiThreedotjs className="w-6 h-6" />,
+  "react three fiber": <SiThreedotjs className="w-6 h-6" />,
   chakraUI: <SiChakraui className="w-6 h-6" />,
 };
 
@@ -86,9 +86,10 @@ const Projects = (props: Props) => {
                     hidden: { opacity: 0 },
                     show: { opacity: 1 },
                   }}
+                  className="relative group"
                 >
                   <Link href={`/projects/${el.id}`}>
-                    <div className="mx-auto w-11/12 md:w-[20rem] md:h-fit lg:w-[24rem] lg:h-[21.5rem] p-5 rounded-xl bg-white/20 ring-1 ring-black/5 shadow-md border-2 border-transparent hover:border-green-500 hover:shadow-green-500 transition-shadow relative group ease-in z-0">
+                    <div className="mx-auto w-11/12 md:w-[20rem] md:h-fit lg:w-[24rem] lg:h-[21.5rem] p-5 rounded-xl bg-white/20 ring-1 ring-black/5 shadow-md border-2 border-transparent hover:border-green-500 hover:shadow-green-500 transition-shadow   ease-in ">
                       <div className="h-1/2 overflow-hidden rounded-t-xl bg-gradient-to-r from-purple-500 to-emerald-300 px-5 pt-5 pb-2 justify-center flex ">
                         <Image
                           src={el.img}
@@ -109,32 +110,34 @@ const Projects = (props: Props) => {
                         <h1 className="text-lg -mt-1 font-poppins ">
                           {el.name}
                         </h1>
-                        <p className="text-sm text-justify font-comfortaa">
+                        <p className="text-sm text-justify font-comfortaa px-1">
                           {el.des}
                         </p>
                       </div>
-                      <div className="hidden group-hover:flex absolute right-4 top-4  flex-col gap-2 ease-in-out transition-transform ">
-                        <Link href={el?.github} target="_blank" className="z-30">
-                          <div className="rounded-lg z-30  bg-black shadow-md p-4 hover:bg-slate-800">
-                            <BsGithub className="w-6 h-6 text-white" />
-                          </div>
-                        </Link>
-                        <div className="rounded-lg  bg-black shadow-md p-4 hover:bg-slate-800">
-                          <TbArrowUpRight className="w-6 h-6 text-white" />
-                        </div>
-                      </div>
                     </div>
                   </Link>
+                  <div className="hidden group-hover:flex absolute right-4 top-4  flex-col gap-2 ease-in-out transition-transform ">
+                    <Link href={el?.github} target="_blank" className="z-30">
+                      <div className="rounded-lg z-30  bg-black shadow-md p-4 hover:bg-slate-800">
+                        <BsGithub className="w-6 h-6 text-white" />
+                      </div>
+                    </Link>
+                    <Link href={el?.liveDemo} target="_blank" className="z-30">
+                      <div className="rounded-lg  bg-black shadow-md p-4 hover:bg-slate-800">
+                        <TbArrowUpRight className="w-6 h-6 text-white" />
+                      </div>
+                    </Link>
+                  </div>
                 </motion.div>
               ))}
             </motion.div>
-            <Link href="https://github.com/D1vyeshN" target="_blank">
+            <Link href="https://github.com/D1vyeshN?tab=repositories" target="_blank">
               <motion.div
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 className="px-5 py-3 mt-4 font-grotrsk text-white rounded-lg bg-purple-500 flex items-center shadow-md hover:bg-purple-400 cursor-pointer"
               >
-                See all{" "}
+                See all on Github{" "}
                 <RiArrowRightLine className="w-6 h-6 ml-1 p-0 m-0 bg-inherit" />
               </motion.div>
             </Link>

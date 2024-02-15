@@ -7,6 +7,9 @@ import { ThemeProvider } from "next-themes";
 import { motion } from "framer-motion";
 import "../../app/globals.css";
 import { redirect, usePathname } from "next/navigation";
+import { AiOutlineLoading } from "react-icons/ai";
+import { BiLoader } from "react-icons/bi";
+import { TbLoader3 } from "react-icons/tb";
 
 type Props = {
   children: React.ReactNode;
@@ -37,7 +40,9 @@ const Loader = ({ children }: Props) => {
           stared ? "hidden" : ""
         }`}
       >
-        LOADING... --&gt; {Math.round(progress)}%
+        <div className="flex">
+        
+          </div> L<BiLoader className="animate-spin mx-0.5"/>A D I N G . .  {Math.round(progress)}%
       </div>}
       {stared && (
         <motion.div>

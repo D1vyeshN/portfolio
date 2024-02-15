@@ -2,12 +2,13 @@ export const projects = [
     {
         id: "pockemon-verse",
         img: "/assets/pokemonVerse.png",
-        feat: ["-Responsive web Design.", "-Pokemon website using graphql to query data from PokeAPI", "-Loader that shows when graphql query fetching data.", "-List of pokemons form starting to ending on select of any one shows Details and their evolutions if available.", "-Here is Infinite scrolling feature that get new data as you reach the bottom of site.", "-Search bar that helps to direct search any pokemon."],
+        feat: ["+ Utilization of responsive web design.", "+ Development of a Pokémon website using GraphQL to fetch data from PokeAPI.", "+ Implementation of a loader to indicate data retrieval during GraphQL queries.", "+ Compilation of a Pokémon list from the beginning to the end; selecting one displays detailed information and available evolutions.", "+ Integration of an infinite scrolling feature for continuous data loading as you navigate to the site's bottom.", "+ Inclusion of a search bar for direct Pokémon searches."],
         name: "PockemonVerse",
-        github: "https://github.com/D1vyeshN/YoutubeLite-CloneWebsite"
+        github: "https://github.com/D1vyeshN/PokemonVerse"
         ,
+        liveDemo: "https://pokemon-verse.vercel.app",
         des: "Discover Pokémon on PockemonVerse, Display of Pokémon data for an immersive journey.",
-        tech: ["nextjs", "reactjs", "typescript", "graphql", "tailwindcss"],
+        tech: ["react.Js", "typescript", "graphQL", "tailwindCSS"],
     },
     {
         name: "E-Commerce OnlineStore",
@@ -15,59 +16,64 @@ export const projects = [
         img: "/assets/onlineStore.png",
 
         des: "Shop smarter with User-friendly eCommerce OnlineStore, featuring a wide selection of products and hassle-free shopping experience.",
-        feat: ["-Responsive web Design.", "-User authentication (login,Signup) using passportJs.", "-Without login User can search and filter product and visit product detail page.", "-Only loged in User can give feedback on product and add into the cart.", "-User can change quantity and remove product from cart.", "-Checkout page Where User add address and remove address and navigate to payment.", "-Payment is done using Razorpay API and when payment done User navigate to order-success page.", "-User can show all orders in my orders page.", "-On my profile page User can edit name and profile picture and also show,add,edit and delete addresses.", " ", " ADMIN:All that users can do in website", "-ADD ,EDIT and DELETE product.", "-Admin can show available stock.", "-Show all Orders made by All Users and Order details.", "-Admin can set Order status.", "-ADD categories and brands."],
-        github: "https://github.com/D1vyeshN/YoutubeLite-CloneWebsite"
+        feat: ["+ Responsive web Design.", "+ User authentication via passports for secure login and signup.", "+ Non-logged-in users can browse and filter products, and view product details, but feedback and adding to cart require logging in.", "+ Cart functionality includes modifying quantities and removing items.", "+ Streamlined checkout process with address management and payment via Razorpay API leading to an order-success page.", "+ Access to order history on the 'My Orders' page.", "+ User profile customization for name, profile picture, address management, and more.", " ", "Admin Capabilities:", "+ Product management: adding, editing, and deleting products.", "+ Monitoring stock availability.", "+ Oversight of all orders and detailed order information.", "+ Setting order statuses.", "+ Category and brand management."," ","Credentials ","Normal User: test@test.com/Test@123","Admin User: div@abc.com/Div@123 "],
+        github: "https://github.com/D1vyeshN/e-commerce",
+        liveDemo: "https://online-store-ecommerce-dn.vercel.app"
+
 
 
         , tech: [
             "javascript",
-            "reactjs",
+            "react.Js",
             "redux",
-            "tailwindcss",
-            "nodejs",
-            "mongodb",
-            "passportJs",
+            "tailwindCSS",
+            "node.Js",
+            "mongoDB",
+            "passport.Js",
             "razorpay"
         ],
     },
     {
 
         name: "Porfolio website",
-        img: "/assets/portfiliodark.png",
+        img: "/assets/portfoliodark.png",
         id: "porfolio-website",
-        feat: ["-Responsive web Design.", "-Loading screen that show until the 3D models are loaded then navigate to main website.", "-Projects section that showcase some selected projects and navigation to live ,github code and Project Detail page.", "-Contact Section so any one can contact with developer by name ,Email and message", "-Contact form send mail using Emailjs.", "-Animations using framer motion gives batter user experience.", "-Navigation bar and footer to navigate any section on website and some links on footer for code and contact.", "-React three fiber is used to render 3D models.", "-Product Detail page that have little brief detail of project and links for live and code."],
+        feat: ["+ Responsive web design for optimal viewing across devices.", "+ Introduction loading screen displaying until 3D models load, directing users to the main website.", "+ Projects section featuring select projects with links to live demos, GitHub repositories, and detailed project pages.", "+ Contact section facilitating communication with the developer via name, email, and messaging.", "+ Integration of Emailjs to enable sending emails through the contact form.", "+ Enhanced user experience through animations using Framer Motion.", "+ Navigation bar and footer for seamless website exploration, including links to various sections, code, and contact information.", "+ Utilization of React Three Fiber for rendering 3D models.", "+ Product detail page offering concise project information and access to live demos and GitHub code."],
 
         des: "Capturing creativity and expertise in a digital showcase.",
         github: "https://github.com/D1vyeshN/YoutubeLite-CloneWebsite",
-
+        liveDemo: "https://online-store-ecommerce-dn.vercel.app"
+        ,
         tech: [
-            "nextjs",
-            "reactjs",
+            "next.Js",
+            "react.Js",
             "typescript",
-            "threejs",
-            "tailwindcss",
-            "framermotion",
+            "react three fiber",
+            "tailwindCSS",
+            "framer motion",
         ],
     },
     {
         id: "youtube-clone",
         img: "/assets/youTubeLite.png",
-        feat: ["-Responsive web Design.", "-Here is only Home page and video page UI using ReactJs and Tailwind CSS", "-Loading that shows on data is fetching form youtube API.", "-Navigation bar that have searching feature that can help to search any content.", "-Responsive Side menubar with Bunch of category Options to related contents like music, trending.", "-Video lists that show Views, timing ,thumbnail and channel for every videos.", "-Click on to watch video and gives suggestions for related videos."],
-
+        feat: ["+ Utilizes a responsive web design.", "+ Showcases the Home page and video page UI developed using ReactJs and Tailwind CSS.", "+ Incorporates a loading feature while fetching data from the YouTube API.", "+ Features a navigation bar with a search function for content exploration.", "+ Includes a responsive Side Menubar with various category options related to content such as music and trending topics.", "+ Displays video lists detailing views, duration, thumbnail, and channel information for each video.", "+ Enables users to click and watch videos while receiving suggestions for related content."],
+        liveDemo: "https://youtube-lite-clone-dn.vercel.app"
+        ,
         name: "YouTube Clone",
         des: "Your familiar YouTube experience, recreated. Welcome to YouTubeClone.",
-        tech: ["javascript", "reactjs", "tailwindcss"],
+        tech: ["javascript", "react.Js", "tailwindCSS"],
         github: "https://github.com/D1vyeshN/YoutubeLite-CloneWebsite"
     },
     {
         id: "cryptosite",
         img: "/assets/crtptopedia.png",
         name: "CryptoSite",
-        feat: ["-Responsive web Design.", "Website for cryptocurrency Information that shows price in USD and INR in Coins section.", "-Exchange have lots of cryptocurrency Exchange companies and on click the user navigate to their original website.", "-All data about Exchanges and Currencies fetch from API.", "-Here is Graphical representation of crypto-currencies data of like 7day,15days,30days and some ups and downs of their price."],
-
+        feat: ["+ Responsive Web Design.", "+ A dedicated section showcasing cryptocurrency information, displaying prices in both USD and INR.", "+ Extensive listing of cryptocurrency exchange companies, with direct links to their respective websites upon selection.", "+ Real-time data sourced from APIs concerning exchanges and currencies.", "+ Graphical representation illustrating the price fluctuations of various cryptocurrencies over 7, 15, and 30-day periods."],
+        liveDemo: "https://crypto-website-two.vercel.app/"
+        ,
         des: "Unlock the world of cryptocurrencies with our informative CryptoSite, Go-to destination for analysis and resources.",
-        tech: ["javascript", "reactjs", "framermotion", "chakraUI"],
-        github: "https://github.com/D1vyeshN/YoutubeLite-CloneWebsite"
+        tech: ["javascript", "react.Js", "framer motion", "chakraUI"],
+        github: "https://github.com/D1vyeshN/Crypto-Website"
 
     },
 ];

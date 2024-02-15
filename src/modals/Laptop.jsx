@@ -18,7 +18,7 @@ import { TextureLoader } from "three";
 export function Laptop(props) {
   const texture_1 = useLoader(TextureLoader, "/assets/pokemonVerse.png");
   const texture_2 = useLoader(TextureLoader, "/assets/onlineStore.png");
-  const texture_3 = useLoader(TextureLoader, "/assets/portfiliodark.png");
+  const texture_3 = useLoader(TextureLoader, "/assets/portfolio.png");
   const texture_4 = useLoader(TextureLoader, "/assets/youTubeLite.png");
   const texture_5 = useLoader(TextureLoader, "/assets/crtptopedia.png");
   const ref = useRef();
