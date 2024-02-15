@@ -65,8 +65,8 @@ const Page = (props: Props) => {
 
         <div className="flex flex-col gap-4 h-fit  min-h-[80vh] rounded-xl p-6 lg:p-10 overflow-hidden">
           <div className="text-3xl lg:text-4xl text-purple-600 flex">
-            {project?.tech.map((el) => (
-              <p className="w-10">{stack[el]}</p>
+            {project?.tech.map((el,i) => (
+              <p className="w-10" key={i}>{stack[el]}</p>
             ))}
           </div>
           <div>

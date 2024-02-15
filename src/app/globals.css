@@ -17,10 +17,10 @@
     display: none;
 }
 
-/* ::selection {
-    color: red;
-    background: #b583ef;
-  } */
+::selection {
+    color: #523c89;
+    background: #b599fc;
+  }
 
 
   

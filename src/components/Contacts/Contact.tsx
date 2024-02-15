@@ -19,6 +19,7 @@ const Contact = (props: Props) => {
       mainControls.start("visible");
     }
   }, [isInView]);
+
   return (
     <motion.div
       ref={containerRef}
