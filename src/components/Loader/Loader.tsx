@@ -22,10 +22,10 @@ const Loader = ({ children }: Props) => {
 
   useEffect(() => {
     setTimeout(() => {
-      if (path !== "/" && progress==0) {
+      if (path !== "/" && progress == 0) {
         setStared(true);
       }
-      
+
       if (progress === 100) {
         setStared(true);
       }
@@ -36,11 +36,11 @@ const Loader = ({ children }: Props) => {
     <ThemeProvider defaultTheme="dark">
       {!stared && (
         <div
-          className={`h-screen flex items-center justify-center md:text-7xl  ${
+          className={`h-screen flex items-center justify-center text-xl md:text-7xl  ${
             stared ? "hidden" : ""
           }`}
         >
-          <div className="flex"></div> L
+          L
           <BiLoader className="animate-spin mx-0.5" />A D I N G . .{" "}
           {Math.round(progress)}%
         </div>

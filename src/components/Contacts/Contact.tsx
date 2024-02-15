@@ -25,10 +25,10 @@ const Contact = (props: Props) => {
       ref={containerRef}
       initial="hidden"
       animate={mainControls}
-      className="w-full font-comfortaa lg:h-[calc(100vh-225px)] md:flex justify-around md:my-auto md:p-10 p-5 py-10 my-8 gap-6  rounded-lg backdrop-blur-sm bg-white/20 ring-1 ring-black/10 shadow-lg"
+      className="w-full font-comfortaa lg:h-[calc(100vh-225px)] md:flex justify-center md:my-auto md:p-10 p-5 py-10 my-8 gap-6  rounded-lg backdrop-blur-sm bg-white/20 ring-1 ring-black/10 shadow-lg"
       id="contact"
     >
-      <motion.div variants={slideInFromLeft(0.3)} className="md:w-1/2">
+      <motion.div variants={slideInFromLeft(0.3)} className="md:w-1/2 md:mr-10">
         <div className="lg:h-52 py-5  rounded-full text-center">
           <Image
             src={"/assets/pic.png"}
@@ -40,7 +40,7 @@ const Contact = (props: Props) => {
         </div>
         <div className="flex items-center">
           <div className="flex flex-col  gap-4 h-fit">
-            <p className="lg:text-3xl font-solitreo text-green-500">Contact</p>
+            <p className="text-3xl font-solitreo text-green-500">Contact</p>
             <div>
               <p className="lg:text-2xl">
                 Enjoyed my work? Let’s work together

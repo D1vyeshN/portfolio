@@ -41,8 +41,8 @@ export const projects = [
         feat: ["+ Responsive web design for optimal viewing across devices.", "+ Introduction loading screen displaying until 3D models load, directing users to the main website.", "+ Projects section featuring select projects with links to live demos, GitHub repositories, and detailed project pages.", "+ Contact section facilitating communication with the developer via name, email, and messaging.", "+ Integration of Emailjs to enable sending emails through the contact form.", "+ Enhanced user experience through animations using Framer Motion.", "+ Navigation bar and footer for seamless website exploration, including links to various sections, code, and contact information.", "+ Utilization of React Three Fiber for rendering 3D models.", "+ Product detail page offering concise project information and access to live demos and GitHub code."],
 
         des: "Capturing creativity and expertise in a digital showcase.",
-        github: "https://github.com/D1vyeshN/YoutubeLite-CloneWebsite",
-        liveDemo: "https://online-store-ecommerce-dn.vercel.app"
+        github: "https://github.com/D1vyeshN/portfolio",
+        liveDemo: "https://divyesh-nandanwar.vercel.app"
         ,
         tech: [
             "next.Js",

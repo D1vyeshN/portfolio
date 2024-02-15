@@ -26,7 +26,7 @@ const Hero = (props: Props) => {
       {/* 3D model */}
       <motion.div
         variants={slideInFromRight(0.5)}
-        className="md:w-6/12  min-h-[40vh] md:min-h-[30vh] m-5"
+        className="md:w-6/12 h-[50vh] min-h-[40vh] md:min-h-[30vh] lg:h-full m-5"
       >
         <Canvas camera={{ position: [5, 3, 5] }} className="z-0 w-full">
           <Suspense fallback={null}>
@@ -37,7 +37,7 @@ const Hero = (props: Props) => {
       {/* Into */}
       <motion.div
         variants={slideInFromLeft(0.5)}
-        className="md:w-1/2  m-5 flex items-center"
+        className="md:w-1/2  m-5 -mt-5 flex items-center"
       >
         <div className="flex flex-col gap-4 h-fit">
           <h1 className="text-3xl lg:text-7xl py-3 font-solitreo text-transparent bg-clip-text font-black bg-gradient-to-r from-purple-500 to-green-400">
@@ -54,7 +54,7 @@ const Hero = (props: Props) => {
               to life in the digital realm.
             </p>
           </div>
-          <div className="flex gap-4 font-grotrsk">
+          <div className="flex gap-4  font-grotrsk text-sm justify-center lg:text-base lg:justify-normal">
             <Link
               href="https://drive.google.com/file/d/1dSl1Vp-wt_vFf8wuNPi2pn_UY1r4UsF4/view"
               target="_blank"
@@ -62,7 +62,7 @@ const Hero = (props: Props) => {
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                className="px-5 py-3 rounded-lg bg-white/20 flex items-center shadow-md"
+                className="lg:px-5 px-5 py-3 rounded-lg bg-white/20 flex items-center shadow-md"
               >
                 <IoDocumentTextOutline className="w-5 h-5 mr-2" />
                 Resume
@@ -72,10 +72,10 @@ const Hero = (props: Props) => {
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                className="px-5 py-3 rounded-lg bg-purple-500 flex items-center justify-center shadow-md"
+                className="lg:px-5 px-4 py-3 rounded-lg bg-purple-500 flex items-center justify-center shadow-md"
               >
                 Get in touch
-                <TbArrowRight className="w-5 h-5 ml-2" />
+                <TbArrowRight className="w-5 h-5 ml-1" />
               </motion.button>
             </Link>
           </div>

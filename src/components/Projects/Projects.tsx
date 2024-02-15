@@ -35,7 +35,7 @@ export const stack: any = {
   mongoDB: <SiMongodb className="w-6 h-6" />,
   typescript: <BiLogoTypescript className="w-6 h-6" />,
   "framer motion": <TbBrandFramerMotion className="w-6 h-6" />,
-  "graphQL": <TbBrandGraphql className="w-6 h-6" />,
+  graphQL: <TbBrandGraphql className="w-6 h-6" />,
   sass: <DiSass className="w-6 h-6" />,
   "react three fiber": <SiThreedotjs className="w-6 h-6" />,
   chakraUI: <SiChakraui className="w-6 h-6" />,
@@ -62,7 +62,7 @@ const Projects = (props: Props) => {
               Projects
             </p>
             <div>
-              <p className="text-2xl text-center">
+              <p className="text-2xl text-center font-poppins">
                 Take a look at my highlighted projects
               </p>
             </div>
@@ -89,14 +89,14 @@ const Projects = (props: Props) => {
                   className="relative group"
                 >
                   <Link href={`/projects/${el.id}`}>
-                    <div className="mx-auto w-11/12 md:w-[20rem] md:h-fit lg:w-[24rem] lg:h-[21.5rem] p-5 rounded-xl bg-white/20 ring-1 ring-black/5 shadow-md border-2 border-transparent hover:border-green-500 hover:shadow-green-500 transition-shadow   ease-in ">
+                    <div className="mx-auto w-11/12 md:w-[20rem]  lg:w-[24rem] md:h-[21.5rem] p-5 rounded-xl bg-white/20 ring-1 ring-black/5 shadow-md border-2 border-transparent hover:border-green-500 hover:shadow-green-500 transition-shadow   ease-in ">
                       <div className="h-1/2 overflow-hidden rounded-t-xl bg-gradient-to-r from-purple-500 to-emerald-300 px-5 pt-5 pb-2 justify-center flex ">
                         <Image
                           src={el.img}
                           alt="pic"
                           width={1000}
                           height={1000}
-                          className="w-2/3 rounded-xl shadow-lg"
+                          className="w-3/4 rounded-xl shadow-lg"
                         />
                       </div>
                       <div className="h-1/2  py-2 flex flex-col gap-2">
@@ -131,7 +131,10 @@ const Projects = (props: Props) => {
                 </motion.div>
               ))}
             </motion.div>
-            <Link href="https://github.com/D1vyeshN?tab=repositories" target="_blank">
+            <Link
+              href="https://github.com/D1vyeshN?tab=repositories"
+              target="_blank"
+            >
               <motion.div
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}

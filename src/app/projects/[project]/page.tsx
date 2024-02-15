@@ -53,13 +53,13 @@ const Page = (props: Props) => {
         variants={slideInFromRight(0.2)}
         className="md:w-8/12 rounded-xl overflow-hidden m-5 flex flex-col h-fit shadow-lg backdrop-blur-md bg-white/20 ring-1 ring-black/10 relative"
       >
-        <div className="h-[50vh] overflow-hidden rounded-t-xl bg-gradient-to-r from-purple-500 to-emerald-400 p-5 flex justify-center ">
+        <div className="h-[50vh] overflow-hidden rounded-t-xl bg-gradient-to-r from-purple-500 to-emerald-400 p-5 flex justify-center items-center ">
           <Image
             src={project?.img!}
             alt="pic"
             width={1000}
             height={1000}
-            className="w-fit rounded-xl shadow-lg"
+            className="lg:w-2/3 h-fit  rounded-xl shadow-lg"
           />
         </div>
 

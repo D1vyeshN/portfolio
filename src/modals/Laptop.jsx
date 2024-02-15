@@ -29,11 +29,11 @@ export function Laptop(props) {
   });
   return (
     <>
-      <OrbitControls enableZoom={false} enablePan={false} />
+      <OrbitControls enableZoom={false} enablePan={false} enableDamping={false} enableRotate={false}/>
       <ambientLight intensity={1.7} />
       <directionalLight position={[2, 1, 1]} />
       <mesh {...props} ref={ref} receiveShadow castShadow>
-        <boxGeometry args={[2.5, 2.5, 2.5]} />
+        <boxGeometry args={[3, 3, 3]} />
 
           {/* <AsciiRenderer  bgColor="#000" color fgColor="#000"/> */}
         <meshStandardMaterial map={texture_1} attach="material-5"/>

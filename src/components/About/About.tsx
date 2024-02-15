@@ -61,13 +61,14 @@ const About = (props: Props) => {
         // whileInView={"visible"}
         className="h-fit lg:h-[calc(100vh-120px)] flex flex-col items-center justify-center md:flex-row md:justify-between md:p-16 p-5 py-20 gap-6 rounded-lg backdrop-blur-sm bg-white/20 ring-1 ring-black/10 shadow-lg "
       >
+
         <motion.div
           // style={{ translateX: paraOne }}
           // variants={slideInFromLeft(0.5)}
           variants={slideInFromRight(0.5)}
           className="md:w-5/12 w-full h-[30vh] md:h-full md:min-h-[30vh]  flex items-center justify-center"
         >
-          <Canvas>
+          <Canvas >
             <Suspense fallback={null}>
               <Laptop />
             </Suspense>
@@ -99,7 +100,7 @@ const About = (props: Props) => {
             <motion.h1
               //
               // className="md:text-3xl text-[#8ae59d] font-solitreo"
-              className="md:text-3xl text-green-500 font-solitreo"
+              className="text-3xl text-green-500 font-solitreo"
             >
               About me
             </motion.h1>
@@ -119,7 +120,7 @@ const About = (props: Props) => {
                 professionally.
               </p>
             </div>
-            <div className="flex gap-4">
+            <div className="flex gap-4 justify-center md:justify-normal">
               <Link
                 href="https://drive.google.com/file/d/1dSl1Vp-wt_vFf8wuNPi2pn_UY1r4UsF4/view"
                 target="_blank"
